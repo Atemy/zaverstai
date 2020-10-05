@@ -36,6 +36,93 @@ body {
     margin-right: 0;
 }
 
+
+.box-little{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.article{
+    justify-content: space-between;
+    width: 33%;
+}
+
+.box-little_img{
+    border:black;
+    border-radius:5%;
+}
+
+.box-little:last-child{
+    margin-right: 0;
+    float: left;
+}
+
+.box-large{
+    width: 1200px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    margin: 0 auto;
+    }
+
+.box-large p,
+.box-large h2{
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    color: #FFFFFF;
+    }
+
+.article-foto{
+    width: 49%;
+    height: 552px;
+    background-image: url("Public/foto.png");
+    border-radius:2%;
+}
+
+.article-cheese{
+    width: 49%;
+    height: 552px;
+    background-image: url("Public/cheese.png");
+    border-radius:2%;
+}
+
+.bottom-show-more{
+    display: flex;
+    margin: 116px auto;
+    align-items: center;
+}
+
+.zagolovok{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+   }
+
+.zagolovok h1{
+    margin:auto;
+    }
+
+
+.about-me{
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+    }
+    
+
+.about-me h1{
+    width: 100%;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
 footer{
     width: 1200px;
     margin: 0 auto;
