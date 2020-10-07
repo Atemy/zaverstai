@@ -19,9 +19,9 @@
             <a href="#" class="navigation__link">Написать мне</a>
         </nav>
     </header>
-    <figure class="theme-nav">
+
     <div class="choose-theme-container">
-        <h1 class="choose-theme-nav">Все статьи</h1>
+        <h1 class="choose-theme-title">Все статьи</h1>
         <input type="text" class="choose-theme-nav" value="Выбрать тему" list="input-theme">
         <datalist id="input-theme">
             <option value="Фотографии"></option>
@@ -30,62 +30,97 @@
             <option value="Книги"></option>
             <option value="Город"></option>
         </datalist>
-    </figure>
-    <figure class="box-little">
-        <figcaption class="article">
-            <img src="Public/travel.png" alt="Город" class="box-little_img">
-            <p><h3>Путешествие в Берлин в августе</h3></p> 
-            <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
-        </figcaption>
-        <figcaption class="article"> 
-            <img src="Public/coffee.png" alt="Кружечка кофе" class="box-little_img">
-            <p><h3>Где выпить колдбрю в Москве</h3></p> 
-            <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p> 
-        </figcaption>
-       <figcaption class="article">
-           <img src="Public/books.png" alt="Умные книжки" class="box-little_img"> 
-           <p><h3>Прочитано: книжные рекомендации</h3></p> 
-           <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
-        </figcaption>
-    </figure>
-    <figure class="box-large">
-        <figurcaption class="article-foto">
-            <p><h2>Снимки на плёнку</h2></p>
-            <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
-        </figurcaption>
-        <figurcaption class="article-cheese">
-            <p><h2>Домашний чизкейк</h2></p>
-            <p>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
-        </figurcaption>
-    </figure>
-    <input type="button" class="bottom-show-more" value="Показать еще">
-    <figure class="zagolovok">
-        <h1>Обо мне</h1>
-    </figure>
-    <figure class="about-me">
-        <figcaption class="foto-with-me">
-            <img src="Public/about-me.png" alt="Это я">
-        </figcaption>
-        <figcaption class="text-about-me">
-            <p> 
-                Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях,
-                снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно. Я работаю 
-                копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших 
-                рабочих текстов. Буду рада новым сотрудничествам! Если вы хотите написать мне — это можно сделать
-                 в соцсетях или через форму. Всегда приятно услышать обратную связь от читателей и познакомиться 
-                 поближе. Приятного чтения!
-            </p>
-        </figcaption>
-    </figure>
     </div>
+
+    <div class="box-little">
+        <figure class="article">
+            <img src="Public/travel.png" alt="Город" class="box-little_img">
+            <figcaption>
+                <h3>Путешествие в Берлин в августе</h3>
+                <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+            </figcaption>
+        </figure>
+        <figure class="article">
+            <img src="Public/coffee.png" alt="Кружечка кофе" class="box-little_img">
+            <figcaption>
+                <h3>Где выпить колдбрю в Москве</h3>
+                <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+            </figcaption>
+        </figure>
+        <figure class="article">
+            <img src="Public/books.png" alt="Умные книжки" class="box-little_img">
+            <figcaption>
+                <h3>Прочитано: книжные рекомендации</h3>
+                <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+            </figcaption>
+        </figure>
+    </div>
+    <div class="box-large">
+        <div class="article-foto">
+            <h2>Снимки на плёнку</h2>
+            <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+        </div>
+        <div class="article-cheese">
+            <h2>Домашний чизкейк</h2>
+            <p>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+        </div>
+    </div>
+    <input type="button" class="bottom-show-more" value="Показать еще">
+    <h1 style="text-align: center;">Обо мне</h1>
+    <div class="about-me">
+        <img src="Public/about-me.png" alt="Это я">
+
+        <div class="about-me-text">
+            <p>
+                Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях,
+                снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.
+            </p>
+            <p>
+                Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже размещены несколько моих лучших
+                рабочих текстов. Буду рада новым сотрудничествам!
+            </p>
+            <p>
+                Если вы хотите написать мне — это можно сделать
+                в соцсетях или через форму. Всегда приятно услышать обратную связь от читателей и познакомиться
+                поближе.
+            </p>
+            <p>Приятного чтения!</p>
+            <p class="quote">
+                 Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, 
+                я действительно узнаю настояющую себя.
+            </p>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Портфолио</h1>
+    <div class="portfolio">
+        <div class="portfolio__item academy">
+            <h1>Блог HTML Academy</h1>
+            <h2>«Как учиться продуктивно»</h2>
+            <p>Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
+        </div>
+        <div class="portfolio__item lnk">
+            <h1>Журнал «LNK»</h1>
+            <h2>«Зачем поцели нужны человеку? И какие они бывают»</h2>
+            <p>
+                Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? 
+                Какие смысли вкладывают в этот ритуал? И где корни этой практики?
+            </p>
+        </div>
+        <div class="portfolio__item magazine">
+            <h1>Журнал «Т — Л»</h1>
+            <h2>«Советы по эффективной удалённой работе»</h2>
+            <p>Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.</p>
+        </div>
+    </div>
+    <footer>
+        <nav class="contacts">
+            <a href="#" class="contacts__link">ВК</a>
+            <a href="#" class="contacts__link">Телеграм</a>
+            <a href="#" class="contacts__link">Инстаграм</a>
+            <a href="#" class="contacts__link">Твиттер</a>
+        </nav>
+    </footer>
 </body>
-<footer>
-    <nav class="contacts">
-        <a href="#" class="contacts__link">ВК</a>
-        <a href="#" class="contacts__link">Телеграм</a>
-        <a href="#" class="contacts__link">Инстграм</a>
-        <a href="#" class="contacts__link">Твиттер</a>
-    </nav>
-</footer>
+
 
 </html>
