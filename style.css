@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    
 }
 .header {
     height: 581px;
@@ -87,7 +88,8 @@ body {
     flex-direction:row;
     flex-wrap:wrap;
     align-content:flex-end;
-    width: 49%;        height: 552px;
+    width: 49%;        
+    height: 552px;
     background-image: url("Public/foto.png");
     border-radius:2%;
 }
@@ -107,7 +109,12 @@ body {
 .bottom-show-more{
     display: flex;
     margin: 116px auto;
-    align-items: center;
+    width: 224px;
+    height: 46px;
+    border-radius: 10px;
+    font-size: larger;
+    color: rgba(0, 0, 0, 1);
+    justify-content: center;
 }
 
 .zagolovok{
@@ -132,8 +139,8 @@ body {
 .about-me-text{
     display:flex;
     flex-direction:column; 
-    align-items:center;/*почему то это свойство влияет только на текст без тега,
-                        хотя на это должен влиять align-content.. непонятно*/
+    align-items:center;
+    margin-left:10px;
 }
 
 .quote{
@@ -143,38 +150,71 @@ body {
 }
 
 .portfolio{
-    display: flex;
+    display: flex; 
+    text-align: center;
     width: 1200px;
     margin: 0 auto;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-between;    
 }
+
+ .portfolio__item{
+    max-height: 525px;   
+    height: 525px;
+    width: 387px;
+    border-radius: 5%;
+    word-wrap: break-word;
+}
+
+/* .portfolio__item:nth-child(n){
+    margin: 10px;
+} */
+
+.portfolio__item h1{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.portfolio__item h2{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.portfolio__item p{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 .academy{
     background-image: url("Public/academy.png");
-    height: 525px;
-    width: 20%;
-    border-radius: 5%;
 }
 
 .lnk{
     background-image: url("Public/kiss.png");
-    height: 525px;
-    width: 20%;
-    border-radius: 5%;
     color:white;
 }
 
 .magazine{
     background-image: url("Public/magazine.png");
-    height: 525px;
-    width: 20%;
-    border-radius: 5%;
 }
+
 footer{
     width: 1200px;
     margin: 0 auto;
+}
+
+.choose-theme-nav{
+    width: 203px;
+    height: 46px;
+    background-color: #D7D1C9; 
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: black;
 }
 
 .choose-theme-container{
@@ -205,13 +245,77 @@ input.choose-theme-title{
     
 }
 
+.Feedback{
+    background-image: url("Public/feedback.png");
+    display: flex;
+    flex-direction:column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    height: 670px;
+    width: 1200px;
+    background-size: cover;
+    margin:0 auto;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.name-email{
+    display: flex;
+    flex-direction:row;
+}
+    
+
+.feedback__input{
+    width: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left: 10%;
+    margin-right: 10%;  
+}
+
+.feedback__input input{
+    height: 63px;
+    border-radius: 10px;
+    opacity: .5;
+}
+
+.message__input{
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.message__input textarea{
+    height: 293px;
+    width: 100%;
+    opacity: .5;
+    border-radius: 10px;
+}
+
+.send_button{
+    width: 224px;
+    height: 46px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    opacity: .5;
+    border: 2px solid rgba(0, 0, 0, 1);
+    font-size: larger;
+    color: rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.send_button:active{
+    opacity: 1;
+}
+
 
 
 
 .contacts{
     display: flex;
     align-items: center;
-    /*margin: 0 auto;*/
     background-size: cover;
     background-color: #D7D1C9;
     height: 181px;

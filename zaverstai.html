@@ -22,14 +22,18 @@
 
     <div class="choose-theme-container">
         <h1 class="choose-theme-title">Все статьи</h1>
-        <input type="text" class="choose-theme-nav" value="Выбрать тему" list="input-theme">
-        <datalist id="input-theme">
-            <option value="Фотографии"></option>
-            <option value="Рецепты"></option>
-            <option value="Путешествия"></option>
-            <option value="Книги"></option>
-            <option value="Город"></option>
-        </datalist>
+        <!-- <input type="text" class="choose-theme-nav" value="Выбрать тему" list="input-theme"> -->
+        <!-- <datalist id="input-theme"> -->
+                <select class="choose-theme-nav" >
+                <option >Все статьи</option>
+                <option >Фотографии</option>
+                <option >Рецепты</option>
+                <option >Путешествия</option>
+                <option >Книги</option>
+                <option >Город</option>
+                
+        <!-- </datalist> -->
+        </select>
     </div>
 
     <div class="box-little">
@@ -86,7 +90,7 @@
             </p>
             <p>Приятного чтения!</p>
             <p class="quote">
-                 Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, 
+                Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта,
                 я действительно узнаю настояющую себя.
             </p>
         </div>
@@ -102,7 +106,7 @@
             <h1>Журнал «LNK»</h1>
             <h2>«Зачем поцели нужны человеку? И какие они бывают»</h2>
             <p>
-                Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? 
+                Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются?
                 Какие смысли вкладывают в этот ритуал? И где корни этой практики?
             </p>
         </div>
@@ -111,6 +115,26 @@
             <h2>«Советы по эффективной удалённой работе»</h2>
             <p>Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.</p>
         </div>
+    </div>
+    <input type="button" class="bottom-show-more" value="Показать еще">
+    <h2 style="text-align:center;">Написать мне</h2>
+    <div class="Feedback">
+        <div class="name-email">
+            <div class="feedback__input">
+                <p>Ваше имя</p>
+                <input type="text" required id="name">
+            </div>
+           
+            <div class="feedback__input">
+                <p>Email</p>
+                <input type="email" required id="email">
+            </div>
+        </div>
+        <div class="message__input">
+            <p>Сообщение</p>
+            <textarea class="message" rows="10">Напишите здесь ваше сообщение.</textarea>
+        </div>
+        <button class="send_button">Отправить</button>
     </div>
     <footer>
         <nav class="contacts">
