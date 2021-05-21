@@ -30,7 +30,7 @@ body {
 }
 
 .navigation__link:hover {
-    color: #e2ec4e;
+    color: #da5c5c;
 }
 
 .navigation__link:last-child {
@@ -54,6 +54,11 @@ body {
     width: 387px;
 }
 
+.article:hover,.article-foto:hover,.article-cheese:hover{
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
 .article img{
     height: 268px;
 }
@@ -67,27 +72,35 @@ body {
 
 .box-large{
     width: 1200px;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-size: cover;
-    margin: 0 auto;
+    margin: 62px auto;
     }
 
 .box-large p,
 .box-large h2{
-    width: 80%;
-    margin: 0 auto;
-    
+    width: 80%;   
     color: #FFFFFF;
     }
 
-.article-foto{
-    display:flex;
+.box-large h2{
+    margin: 359px auto 8px auto; 
+}
+
+.box-large p{
+    margin: 0px auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.article-foto,.article-cheese{
+    /* display:flex;
     flex-direction:row;
-    flex-wrap:wrap;
-    align-content:flex-end;
+    flex-wrap:wrap; */
     width: 49%;        
     height: 552px;
     background-image: url("Public/foto.png");
@@ -95,15 +108,9 @@ body {
 }
     
 
-.article-cheese{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    align-content:flex-end;
-    width: 49%;        height: 552px;
+ .article-cheese{
     background-image: url("Public/cheese.png");
-    border-radius:2%;
-}
+} 
 
 
 .bottom-show-more{
@@ -166,6 +173,10 @@ body {
     word-wrap: break-word;
 }
 
+.portfolio__item:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
 /* .portfolio__item:nth-child(n){
     margin: 10px;
 } */
@@ -228,7 +239,6 @@ footer{
 
 .choose-theme-title{
 margin:0 auto;
-
 }
 
 h1.choose-theme-title{
@@ -323,10 +333,14 @@ input.choose-theme-title{
 
 .contacts__link{
     margin:0 auto;
-    color: #2E2F22;
-    transition: color 0.3s;
+    color: #da5c5c;
     text-decoration: none;
 }   
+
+.contacts__link:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
 
 .contacts__link:first-child{
     margin-left: 25%;
